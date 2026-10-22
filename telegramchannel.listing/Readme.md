@@ -1,41 +1,43 @@
+**Languages:** [English](Readme.md) · [Español](README.es.md)
+
 # telegramchannel.listing
 
-Carpeta de repositorio sin archivos de trabajo; únicamente existe .git.
+Repository folder without working files; only .git exists.
 
-Documentación basada en los archivos locales revisados el 21 de octubre de 2026.
+Documentation based on local files reviewed on 21 October 2026.
 
 <!-- BEGIN project-context -->
 
-## Antigüedad y evidencia
+## Historical dates and evidence
 
-**Año de creación: sin determinar.** No se conserva código con una fecha histórica verificable.
+**Creation year: undetermined.** No code with a verifiable historical date is preserved.
 
 
-## Por qué merece la pena mirarlo
+## Why this is worth exploring
 
-Esta carpeta no conserva una implementación del listado de canales. Su utilidad es dejar constancia del proyecto previsto; no hay código que permita destacar una integración Telegram.
+This folder preserves no channel listing implementation. It records the planned project; there is no code supporting a technical highlight about Telegram integration.
 
 <!-- END project-context -->
 
-## Tecnologías y requisitos
+## Technologies and requirements
 
-No se puede determinar el entorno de ejecución con esta copia.
+The runtime environment cannot be determined from this copy.
 
-## Preparación y arranque
+## Setup and startup
 
-Recuperar el código antes de definir instalación, configuración o comandos.
+Recover the code before defining installation, configuration, or commands.
 
-## Configuración e integraciones
+## Configuration and integrations
 
-No hay archivos de aplicación visibles.
+No application files are visible.
 
-## Estado de esta copia
+## Status of this copy
 
-El nombre sugiere una relación con Telegram, pero no permite confirmar su implementación.
+The name suggests a Telegram connection, but does not confirm an implementation.
 
-La revisión fue estática: no se restauraron dependencias, no se compiló ni se ejecutaron aplicaciones o pruebas. Los comandos anteriores son instrucciones de preparación, no resultados de validación. Las versiones indicadas son las del código conservado.
+The review was static: dependencies were not restored, and applications and tests were neither built nor run. The commands above are setup instructions, not validation results. Listed versions describe the preserved code.
 
 
-## Copia pública
+## Public copy
 
-Las credenciales originales se han retirado o sustituido por `REPLACE_WITH_YOUR_VALUE`. Los datos locales, sesiones, certificados privados y perfiles de despliegue se omiten. Configurar servicios y credenciales propios antes de ejecutar. La compilación y el funcionamiento con servicios externos no se han validado.
+Original credentials have been removed or replaced with `REPLACE_WITH_YOUR_VALUE`. Local data, sessions, private certificates, and deployment profiles are omitted. Configure your own services and credentials before running. Building and operation with external services have not been validated.

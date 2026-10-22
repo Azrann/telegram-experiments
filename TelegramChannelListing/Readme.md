@@ -1,68 +1,70 @@
+**Languages:** [English](Readme.md) · [Español](README.es.md)
+
 # TelegramChannelListing
 
-Esqueleto de aplicación ASP.NET Core MVC llamado TelegramChannelListing, con páginas de inicio, información, contacto, privacidad y errores.
+ASP.NET Core MVC application scaffold named TelegramChannelListing, with home, about, contact, privacy, and error pages.
 
-Documentación basada en los archivos locales revisados el 21 de octubre de 2026.
+Documentation based on local files reviewed on 21 October 2026.
 
 <!-- BEGIN project-context -->
 
-## Antigüedad y evidencia
+## Historical dates and evidence
 
-**Año de referencia de esta versión: 2018.** Se toma el archivo de código o configuración más reciente con una fecha histórica recuperable; no se ha podido confirmar la fecha exacta de creación.
+**Reference year for this version: 2018.** This uses the most recent source or configuration file with a recoverable historical date; the exact creation date could not be confirmed.
 
-- Archivo más reciente datable: **2018-08-18**, [`TelegramChannelListing/src/TelegramChannelListing.sln`](src/TelegramChannelListing.sln); fecha de modificación conservada.
-- Referencia adicional: destino `netcoreapp2.1` en [`TelegramChannelListing/src/TelegramChannelListing/TelegramChannelListing.csproj`](src/TelegramChannelListing/TelegramChannelListing.csproj); su [versión estable se publicó el 2018-05-30](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core). Es una pista de generación tecnológica; pudieron existir versiones preliminares anteriores.
+- Most recent datable file: **2018-08-18**, [`TelegramChannelListing/src/TelegramChannelListing.sln`](src/TelegramChannelListing.sln); preserved modification timestamp.
+- Additional reference: target `netcoreapp2.1` in [`TelegramChannelListing/src/TelegramChannelListing/TelegramChannelListing.csproj`](src/TelegramChannelListing/TelegramChannelListing.csproj); its [stable release was published on 2018-05-30](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core). This indicates the technology generation; earlier preview releases may have existed.
 
-## Por qué merece la pena mirarlo
+## Why this is worth exploring
 
-Conserva el esqueleto MVC de una aplicación que pretendía listar canales. Puede servir para estudiar el arranque y las vistas de ASP.NET Core 2.1; el listado y la conexión con Telegram no aparecen implementados.
+Preserves the MVC scaffold of an intended channel listing application. It can serve as a reference for ASP.NET Core 2.1 startup and views; the listing and Telegram connection are not implemented in the visible code.
 
-Puntos de entrada al código:
+Code entry points:
 
 - [`src/TelegramChannelListing/Startup.cs`](src/TelegramChannelListing/Startup.cs)
 - [`src/TelegramChannelListing/Controllers/HomeController.cs`](src/TelegramChannelListing/Controllers/HomeController.cs)
 
 <!-- END project-context -->
 
-## Estructura y responsabilidades
+## Structure and responsibilities
 
-| Ruta | Responsabilidad |
+| Path | Responsibility |
 | --- | --- |
-| `src/TelegramChannelListing/` | Aplicación web, Program y Startup. |
-| `src/TelegramChannelListing/Controllers/HomeController.cs` | Acciones de las páginas de la plantilla. |
-| `src/TelegramChannelListing/Views/` | Vistas Razor y layout. |
-| `src/TelegramChannelListing.sln` | Solución de Visual Studio. |
+| `src/TelegramChannelListing/` | Web application, Program, and Startup. |
+| `src/TelegramChannelListing/Controllers/HomeController.cs` | Template page actions. |
+| `src/TelegramChannelListing/Views/` | Razor views and layout. |
+| `src/TelegramChannelListing.sln` | Visual Studio solution. |
 
-## Tecnologías y requisitos
+## Technologies and requirements
 
-.NET Core 2.1 y herramientas compatibles con ASP.NET Core MVC de esta versión.
+.NET Core 2.1 and tools compatible with this version of ASP.NET Core MVC.
 
-Destinos leídos de los proyectos: `netcoreapp2.1`.
+Targets read from project files: `netcoreapp2.1`.
 
-## Preparación y arranque
+## Setup and startup
 
-Revisar Startup y launchSettings.json antes de iniciar el proyecto web. No se ejecutó el servidor.
+Review Startup and launchSettings.json before starting the web project. The server was not run.
 
-Comandos de preparación, desde esta carpeta, después de revisar la configuración privada:
+Setup commands, run from this folder after reviewing private configuration:
 
 ```text
 dotnet restore src/TelegramChannelListing.sln
 dotnet build src/TelegramChannelListing/TelegramChannelListing.csproj
 ```
 
-Soluciones presentes: `src/TelegramChannelListing.sln`.
+Solutions present: `src/TelegramChannelListing.sln`.
 
-## Configuración e integraciones
+## Configuration and integrations
 
-appsettings.json contiene registro y AllowedHosts. No se identificó un token Telegram o conexión de catálogo en la configuración visible.
+appsettings.json contains logging and AllowedHosts. No Telegram token or catalogue connection was identified in the visible configuration.
 
-## Estado de esta copia
+## Status of this copy
 
-El nombre sugiere un directorio de canales, pero no se encontró una implementación de listado o integración Telegram. La carpeta telegramchannel.listing también existe y no contiene código de aplicación visible; no se fusionaron ambas.
+The name suggests a channel directory, but no listing implementation or Telegram integration was found. The telegramchannel.listing folder also exists and has no visible application code; the two were not merged.
 
-La revisión fue estática: no se restauraron dependencias, no se compiló ni se ejecutaron aplicaciones o pruebas. Los comandos anteriores son instrucciones de preparación, no resultados de validación. Las versiones indicadas son las del código conservado.
+The review was static: dependencies were not restored, and applications and tests were neither built nor run. The commands above are setup instructions, not validation results. Listed versions describe the preserved code.
 
 
-## Copia pública
+## Public copy
 
-Las credenciales originales se han retirado o sustituido por `REPLACE_WITH_YOUR_VALUE`. Los datos locales, sesiones, certificados privados y perfiles de despliegue se omiten. Configurar servicios y credenciales propios antes de ejecutar. La compilación y el funcionamiento con servicios externos no se han validado.
+Original credentials have been removed or replaced with `REPLACE_WITH_YOUR_VALUE`. Local data, sessions, private certificates, and deployment profiles are omitted. Configure your own services and credentials before running. Building and operation with external services have not been validated.

@@ -1,35 +1,37 @@
+**Languages:** [English](README.md) · [Español](README.es.md)
+
 # telegram-experiments
 
-Experimentos de cliente Telegram y prototipo de listado de canales.
+Telegram client experiments and channel listing prototype.
 
 <!-- BEGIN project-context -->
 
-## Antigüedad y evidencia
+## Historical dates and evidence
 
-**Año de referencia de esta versión: 2018.** Se toma el archivo de código o configuración más reciente con una fecha histórica recuperable; no se ha podido confirmar la fecha exacta de creación.
+**Reference year for this version: 2018.** This uses the most recent source or configuration file with a recoverable historical date; the exact creation date could not be confirmed.
 
-- Archivo más reciente datable: **2018-08-18**, [`TelegramChannelListing/src/TelegramChannelListing.sln`](TelegramChannelListing/src/TelegramChannelListing.sln); fecha de modificación conservada.
-- Primer registro entre los repositorios Git originales incluidos: **2018-06-10**. Puede corresponder a una importación; no prueba cuándo se escribió por primera vez.
-- Dependencia fechada más reciente entre las comprobadas: [OpenTl.ClientApi 0.4.76](https://www.nuget.org/packages/OpenTl.ClientApi/0.4.76), publicada el **2018-06-08** (versión declarada), en [`Telegram/TelegramBot/packages.config`](Telegram/TelegramBot/packages.config).
-- Referencia adicional: destino `netcoreapp2.1` en [`TelegramChannelListing/src/TelegramChannelListing/TelegramChannelListing.csproj`](TelegramChannelListing/src/TelegramChannelListing/TelegramChannelListing.csproj); su [versión estable se publicó el 2018-05-30](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core). Es una pista de generación tecnológica; pudieron existir versiones preliminares anteriores.
+- Most recent datable file: **2018-08-18**, [`TelegramChannelListing/src/TelegramChannelListing.sln`](TelegramChannelListing/src/TelegramChannelListing.sln); preserved modification timestamp.
+- Earliest record among the original Git repositories included: **2018-06-10**. This may be an import and does not establish when the code was first written.
+- Most recently published dependency among those checked: [OpenTl.ClientApi 0.4.76](https://www.nuget.org/packages/OpenTl.ClientApi/0.4.76), published on **2018-06-08** (declared version), in [`Telegram/TelegramBot/packages.config`](Telegram/TelegramBot/packages.config).
+- Additional reference: target `netcoreapp2.1` in [`TelegramChannelListing/src/TelegramChannelListing/TelegramChannelListing.csproj`](TelegramChannelListing/src/TelegramChannelListing/TelegramChannelListing.csproj); its [stable release was published on 2018-05-30](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core). This indicates the technology generation; earlier preview releases may have existed.
 
-La publicación de una dependencia sitúa la configuración conservada a partir de esa versión, si la referencia es válida. Una actualización de paquetes puede ser mucho más reciente que el inicio del proyecto. No se restauraron paquetes para comprobarlo.
+A dependency's publication places the preserved configuration at or after that version, if the reference is valid. Package updates may be much newer than the project's beginnings. Packages were not restored to verify this.
 
-Años de referencia por componente (archivo más reciente datable):
+Reference years by component (most recent datable file):
 
-| Componente | Año |
+| Component | Year |
 | --- | --- |
 | [`Telegram/TelegramBot`](Telegram/TelegramBot/) | 2018 |
 | [`Telegram/Telegram.sln`](Telegram/Telegram.sln) | 2018 |
 | [`Telegram/FodyWeavers.xml`](Telegram/FodyWeavers.xml) | 2018 |
 | [`TelegramChannelListing`](TelegramChannelListing/) | 2018 |
-| [`telegramchannel.listing`](telegramchannel.listing/) | Sin determinar |
+| [`telegramchannel.listing`](telegramchannel.listing/) | Undetermined |
 
-## Por qué merece la pena mirarlo
+## Why this is worth exploring
 
-La consola permite seguir autenticación y consultas de usuario mediante MTProto; el proyecto MVC conserva una idea inicial de directorio de canales. Es importante distinguir el experimento de protocolo del esqueleto web todavía sin catálogo.
+The console lets you follow user authentication and queries through MTProto; the MVC project preserves an initial channel directory idea. Distinguish the protocol experiment from the web scaffold that still lacks a catalogue.
 
-Puntos de entrada al código:
+Code entry points:
 
 - [`Telegram/TelegramBot/ClientFactory.cs`](Telegram/TelegramBot/ClientFactory.cs)
 - [`Telegram/TelegramBot/Program.cs`](Telegram/TelegramBot/Program.cs)
@@ -37,37 +39,37 @@ Puntos de entrada al código:
 
 <!-- END project-context -->
 
-## Contenido
+## Contents
 
-| Directorio | Función |
+| Directory | Function |
 | --- | --- |
-| [`Telegram/TelegramBot/`](Telegram/TelegramBot/) | Código fuente |
-| [`TelegramChannelListing/`](TelegramChannelListing/) | Esqueleto de aplicación ASP.NET Core MVC llamado TelegramChannelListing, con páginas de inicio, información, contacto, privacidad y errores. |
-| [`telegramchannel.listing/`](telegramchannel.listing/) | Carpeta de repositorio sin archivos de trabajo; únicamente existe .git. |
+| [`Telegram/TelegramBot/`](Telegram/TelegramBot/) | Source code |
+| [`TelegramChannelListing/`](TelegramChannelListing/) | ASP.NET Core MVC application scaffold named TelegramChannelListing, with home, about, contact, privacy, and error pages. |
+| [`telegramchannel.listing/`](telegramchannel.listing/) | Repository folder without working files; only .git exists. |
 
-Las sesiones, números de teléfono y credenciales se han retirado. El código OpenTL se conserva en opentl-client-api-fork; ajustar las referencias locales si se usa esta solución.
+Sessions, phone numbers, and credentials have been removed. OpenTL code is preserved in opentl-client-api-fork; adjust local references when using this solution.
 
-## Requisitos y preparación
+## Requirements and setup
 
-.NET Framework 4.7.2, .NET Core 2.1 y OpenTL.
+.NET Framework 4.7.2, .NET Core 2.1, and OpenTL.
 
-Esta es una copia histórica. Consultar los archivos de proyecto y los README de cada componente para sus versiones y dependencias. Restaurar NuGet/npm desde la carpeta correspondiente; las bibliotecas internas pueden necesitar reconstrucción. Preparar las bases de datos y los servicios externos con cuentas propias.
+This is a historical copy. Consult each component's project files and README for versions and dependencies. Restore NuGet/npm from the appropriate folder; internal libraries may need rebuilding. Prepare databases and external services using your own accounts.
 
-Soluciones conservadas:
+Preserved solutions:
 
 - `Telegram/Telegram.sln`
 - `TelegramChannelListing/src/TelegramChannelListing.sln`
 
-## Configuración y seguridad
+## Configuration and security
 
-Los secretos originales se han eliminado o sustituido por `REPLACE_WITH_YOUR_VALUE`. Buscar este marcador antes de ejecutar y aportar los valores mediante configuración local o variables de entorno. Las sesiones, claves privadas, certificados de firma, bases de datos, registros, perfiles de despliegue y paquetes binarios no se publican. El `.gitignore` protege estos archivos locales.
+Original secrets have been removed or replaced with `REPLACE_WITH_YOUR_VALUE`. Search for this marker before running and provide values through local configuration or environment variables. Sessions, private keys, signing certificates, databases, logs, deployment profiles, and binary packages are not published. The `.gitignore` protects these local files.
 
-Se publica un historial nuevo: los commits antiguos permanecen únicamente en la copia local original. Los valores de ejemplo no permiten conectarse a los servicios originales.
+A fresh history is published: old commits remain only in the original local copy. Example values cannot connect to the original services.
 
-## Estado de validación
+## Validation status
 
-Se realizó una revisión estática y un escaneo de secretos antes de publicar. No se ejecutaron aplicaciones, operaciones de trading, despliegues ni pruebas que contacten servicios externos. No se garantiza la compilación con herramientas actuales. Algunos proyectos necesitan dependencias históricas y activos que no están incluidos.
+A static review and secret scan were performed before publication. Applications, trading operations, deployments, and tests contacting external services were not run. Building with current tools is not guaranteed. Some projects need historical dependencies and assets that are not included.
 
-## Licencias y procedencia
+## Licenses and provenance
 
-Se conservan las licencias y atribuciones de terceros presentes en el código. No se añade una licencia global a los componentes que no la tenían. Esta importación conserva fuentes locales y no afirma ser una versión actual del proyecto original.
+Third-party licenses and attributions present in the code are retained. No blanket license is added to components that lacked one. This import preserves local sources and does not claim to be a current version of the original project.

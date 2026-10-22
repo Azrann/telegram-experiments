@@ -1,23 +1,25 @@
+**Languages:** [English](Readme.md) · [Español](README.es.md)
+
 # TelegramBot
 
 <!-- BEGIN project-context -->
 
-## Antigüedad y evidencia
+## Historical dates and evidence
 
-**Año de referencia de esta versión: 2018.** Se toma el archivo de código o configuración más reciente con una fecha histórica recuperable; no se ha podido confirmar la fecha exacta de creación.
+**Reference year for this version: 2018.** This uses the most recent source or configuration file with a recoverable historical date; the exact creation date could not be confirmed.
 
-- Archivo más reciente datable: **2018-07-07**, [`Telegram/TelegramBot/TelegramBot.cs`](TelegramBot.cs); fecha de modificación conservada.
-- Primer registro del repositorio Git original que contiene este código: **2018-06-10**. Puede corresponder a una importación; no prueba cuándo se escribió por primera vez.
-- Dependencia fechada más reciente entre las comprobadas: [OpenTl.ClientApi 0.4.76](https://www.nuget.org/packages/OpenTl.ClientApi/0.4.76), publicada el **2018-06-08** (versión declarada), en [`Telegram/TelegramBot/packages.config`](packages.config).
-- Referencia adicional: destino `v4.7.2` en [`Telegram/TelegramBot/TelegramBot.csproj`](TelegramBot.csproj); su [versión estable se publicó el 2018-04-30](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-framework). Es una pista de generación tecnológica; pudieron existir versiones preliminares anteriores.
+- Most recent datable file: **2018-07-07**, [`Telegram/TelegramBot/TelegramBot.cs`](TelegramBot.cs); preserved modification timestamp.
+- First record in the original Git repository containing this code: **2018-06-10**. This may be an import and does not establish when the code was first written.
+- Most recently published dependency among those checked: [OpenTl.ClientApi 0.4.76](https://www.nuget.org/packages/OpenTl.ClientApi/0.4.76), published on **2018-06-08** (declared version), in [`Telegram/TelegramBot/packages.config`](packages.config).
+- Additional reference: target `v4.7.2` in [`Telegram/TelegramBot/TelegramBot.csproj`](TelegramBot.csproj); its [stable release was published on 2018-04-30](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-framework). This indicates the technology generation; earlier preview releases may have existed.
 
-La publicación de una dependencia sitúa la configuración conservada a partir de esa versión, si la referencia es válida. Una actualización de paquetes puede ser mucho más reciente que el inicio del proyecto. No se restauraron paquetes para comprobarlo.
+A dependency's publication places the preserved configuration at or after that version, if the reference is valid. Package updates may be much newer than the project's beginnings. Packages were not restored to verify this.
 
-## Por qué merece la pena mirarlo
+## Why this is worth exploring
 
-La consola y OpenTL permiten explorar autenticación de usuario, sesiones y consultas MTProto, un nivel distinto del simple envío de mensajes de un bot. El punto de interés es la separación entre la aplicación consumidora y el cliente de protocolo.
+The console and OpenTL let you explore user authentication, sessions, and MTProto queries, at a different level from simply sending bot messages. The interesting part is the separation between the consuming application and the protocol client.
 
-Puntos de entrada al código:
+Code entry points:
 
 - [`ClientFactory.cs`](ClientFactory.cs)
 - [`Program.cs`](Program.cs)
